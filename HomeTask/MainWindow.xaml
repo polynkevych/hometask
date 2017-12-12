@@ -6,14 +6,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HomeTask"
         mc:Ignorable="d"
-        WindowStartupLocation="CenterScreen" WindowState="Maximized"
         Title="TestWriter" Height="350" Width="400" Icon="D:\НАУ\HomeTask\HomeTask\Menu.ico" ResizeMode="CanMinimize">
-       
     <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="D:\НАУ\HomeTask\HomeTask\bg.jpg" Stretch="None" TileMode="FlipXY"/>
-        </Grid.Background>
-        <Button x:Name="selectTestFile" Content="Start" HorizontalAlignment="Center" Margin="100,195,98,76" VerticalAlignment="Center" Width="196" Click="selectTestFile_Click" Height="50" Background="#FF65CB00" FontSize="22"/>
+        <Button x:Name="selectTestFile" Content="Start" HorizontalAlignment="Center" Margin="100,195,98,76" VerticalAlignment="Center" Width="196" Click="selectTestFile_Click" Height="50" Background="#FF65CB00" FontSize="22" IsEnabled="False"/>
         <Button x:Name="exitButton" Content="Exit" HorizontalAlignment="Center" Height="31" Margin="145,269,148,21" VerticalAlignment="Center" Width="101" Click="exitButton_Click" Background="White"/>
         <Rectangle Fill="#CCF4F4F5" HorizontalAlignment="Left" Height="153" Stroke="White" VerticalAlignment="Top" Width="394"/>
         <TextBlock x:Name="textBlock" Margin="98,70,106,0" TextWrapping="Wrap" Text="             Enter your surname:" VerticalAlignment="Top" Background="#00000000" Height="20" FontWeight="Bold"/>

@@ -31,6 +31,8 @@ namespace HomeTask
         private int _currentQuestion = 0;
         private int _correctAnswer;
         private int _numberOfCorrectAnswers;
+        private int _score;
+
         private void LoadNextQuestion()
         {
             _currentQuestion++;
@@ -38,9 +40,7 @@ namespace HomeTask
             openImage.Visibility = image.Visibility;
             if (endOfFile)
             {
-             
-
-                var messageBox = MessageBox.Show(MainWindow.surname + "Please show this result to teacher" +"You answered " + _numberOfCorrectAnswers + " out of " + (_currentQuestion - 1) + " answers correctly!", "Hooray!");
+                var messageBox = MessageBox.Show(MainWindow.surname + ", please show this result to teacher \n You answered " + _numberOfCorrectAnswers + " out of " + (_currentQuestion - 1) + " answers correctly!", "Hooray!");
                 if (messageBox == MessageBoxResult.OK)
                 {
                     var mainWindow = new MainWindow();

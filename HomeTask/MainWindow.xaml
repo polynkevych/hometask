@@ -6,6 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HomeTask"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen" WindowState="Maximized"       
         Title="TestWriter" Height="350" Width="400" Icon="D:\НАУ\HomeTask\HomeTask\Menu.ico" ResizeMode="CanMinimize">
     <Grid>
         <Button x:Name="selectTestFile" Content="Start" HorizontalAlignment="Center" Margin="100,195,98,76" VerticalAlignment="Center" Width="196" Click="selectTestFile_Click" Height="50" Background="#FF65CB00" FontSize="22" IsEnabled="False"/>

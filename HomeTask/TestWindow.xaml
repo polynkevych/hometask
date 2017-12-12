@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HomeTask"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen" WindowState="Maximized"
         Title="TestWriter" Height="500" Width="500">
 	<Grid Background="#FFD1F7D8">
 		<RadioButton x:Name="radioButton1" Content="1" HorizontalAlignment="Left" Margin="75,325,0,0" VerticalAlignment="Top"/>

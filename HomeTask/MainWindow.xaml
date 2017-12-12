@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:HomeTask"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen" WindowState="Maximized"       
+
         Title="TestWriter" Height="768" Width="1300" ResizeMode="CanMinimize">
+
     <Grid>
         <Button x:Name="selectTestFile" Content="Start" HorizontalAlignment="Center" Margin="550,404,548,285" VerticalAlignment="Center" Width="196" Click="selectTestFile_Click" Height="50" Background="#FF65CB00" FontSize="22" IsEnabled="False" Grid.ColumnSpan="2"/>
         <Button x:Name="exitButton" Content="Exit" HorizontalAlignment="Center" Height="31" Margin="0,0,0,24" VerticalAlignment="Bottom" Width="101" Click="exitButton_Click" Background="White" Grid.ColumnSpan="2"/>

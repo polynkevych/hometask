@@ -64,7 +64,8 @@ namespace HomeTask
 
         private void textBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-           
+            if (textBox.Text == "") selectTestFile.IsEnabled = false;
+            else selectTestFile.IsEnabled = true;
             
         }
     }

@@ -7,14 +7,16 @@
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen" WindowState="Maximized"
         Title="TestWriter" Height="500" Width="500">
-	<Grid Background="#FFD1F7D8">
-		<RadioButton x:Name="radioButton1" Content="1" HorizontalAlignment="Left" Margin="75,325,0,0" VerticalAlignment="Top"/>
-		<RadioButton x:Name="radioButton2" Content="2" HorizontalAlignment="Left" Margin="75,345,0,0" VerticalAlignment="Top"/>
-		<RadioButton x:Name="radioButton3" Content="3" HorizontalAlignment="Left" Margin="75,365,0,0" VerticalAlignment="Top"/>
-		<Button x:Name="nextQuestion" Content="Next Question" HorizontalAlignment="Left" Margin="149,399,0,0" VerticalAlignment="Top" Width="179" Click="nextQuestion_Click" Height="38"/>
-		<Image x:Name="image" Height="206" Margin="36,10,44,253" Width="412"/>
-		<TextBlock x:Name="question" HorizontalAlignment="Left" Margin="36,253,0,0" TextWrapping="Wrap" Text="QusetionText" VerticalAlignment="Top" Height="55" Width="412"/>
-		<Button x:Name="openImage" Content="Open image in new window" HorizontalAlignment="Left" Margin="315,221,0,0" VerticalAlignment="Top" Width="158" Click="openImage_Click"/>
+    <Grid Background="#FFD1F7D8">
+        <RadioButton x:Name="radioButton1" Content="1" HorizontalAlignment="Left" Margin="75,325,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButton2" Content="2" HorizontalAlignment="Left" Margin="75,345,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButton3" Content="3" HorizontalAlignment="Left" Margin="75,365,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="nextQuestion" Content="Next Question" HorizontalAlignment="Left" Margin="149,399,0,0" VerticalAlignment="Top" Width="179" Click="nextQuestion_Click" Height="38"/>
+        <Image x:Name="image" Height="206" Margin="36,10,44,253" Width="412"/>
+        <TextBlock x:Name="question" HorizontalAlignment="Left" Margin="36,253,0,0" TextWrapping="Wrap" Text="QusetionText" VerticalAlignment="Top" Height="55" Width="412"/>
+        <Button x:Name="openImage" Content="Open image in new window" HorizontalAlignment="Left" Margin="315,221,0,0" VerticalAlignment="Top" Width="158" Click="openImage_Click"/>
+        <MediaElement x:Name="mediaElement" HorizontalAlignment="Left" Height="206" Margin="63,10,0,0" VerticalAlignment="Top" Width="373"/>
+        <Button x:Name="replayButton" Content="Replay" HorizontalAlignment="Left" Margin="75,221,0,0" VerticalAlignment="Top" Width="75" Click="replayButton_Click"/>
 
-	</Grid>
+    </Grid>
 </Window>

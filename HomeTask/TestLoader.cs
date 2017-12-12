@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
+using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
 namespace HomeTask
@@ -15,40 +16,57 @@ namespace HomeTask
             _path = path;
         }
 
-        public void ParseNewQuestion(int questionNumber, TextBlock question, RadioButton answer1, RadioButton answer2, RadioButton answer3, Image image, out int correctAnswer, out bool endOfFile)
+        public void ParseNewQuestion(int questionNumber, TextBlock question, RadioButton answer1, RadioButton answer2, RadioButton answer3, Image image, MediaElement video, out int correctAnswer, out bool endOfFile)
         {
             List<char> questionString;
             List<char> answer1String;
             List<char> answer2String;
             List<char> answer3String;
 
-            ParseText(questionNumber, out questionString, out answer1String, out answer2String, out answer3String, out string imgPath, out correctAnswer, out endOfFile);
+            ParseText(questionNumber, out questionString, out answer1String, out answer2String, out answer3String,
+                out string imgPath, out string videoPath, out correctAnswer, out endOfFile);
 
             question.Text = String.Concat(questionString);
             answer1.Content = String.Concat(answer1String);
             answer2.Content = String.Concat(answer2String);
             answer3.Content = String.Concat(answer3String);
 
-            if (imgPath == "")
-            {
-                image.Visibility = System.Windows.Visibility.Hidden;
-                return;
-            }
+            video.LoadedBehavior = MediaState.Manual;
 
-            image.Visibility = System.Windows.Visibility.Visible;
-            var fullImagePath = System.IO.Path.GetDirectoryName(_path) + "\\" + imgPath;
-            var uri = new Uri(fullImagePath);
-            var bitmap = new BitmapImage(uri);
-            image.Source = bitmap;
+            if (imgPath != "")
+            {
+                image.Visibility = System.Windows.Visibility.Visible;
+                var fullImagePath = System.IO.Path.GetDirectoryName(_path) + "\\" + imgPath;
+                var uri = new Uri(fullImagePath);
+                var bitmap = new BitmapImage(uri);
+                image.Source = bitmap;
+            }
+            else
+                image.Visibility = System.Windows.Visibility.Hidden;
+
+            if (videoPath != "")
+            {
+                video.Visibility = System.Windows.Visibility.Visible;
+                var fullVideoPath = System.IO.Path.GetDirectoryName(_path) + "\\" + videoPath;
+                video.Source = new Uri(fullVideoPath);
+                video.Play();
+            }
+            else
+            {
+                video.Visibility = System.Windows.Visibility.Hidden;
+                video.Stop();
+            }
         }
 
         private string _path;
 
-        private void ParseText(int questionNumber, out List<char> questionString, out List<char> answer1String, out List<char> answer2String, out List<char> answer3String, out string imgPath, out int correctAnswer, out bool endOfFile)
+        private void ParseText(int questionNumber, out List<char> questionString, out List<char> answer1String, out List<char> answer2String, out List<char> answer3String,
+            out string imgPath, out string videoPath, out int correctAnswer, out bool endOfFile)
         {
             string[] lines = System.IO.File.ReadAllLines(_path);
 
             imgPath = "";
+            videoPath = "";
 
             endOfFile = false;
 
@@ -89,6 +107,9 @@ namespace HomeTask
 
                 if (line.Contains('@'))
                     imgPath = String.Concat(line.Where(c => c != '@'));
+
+                if (line.Contains('#'))
+                    videoPath = String.Concat(line.Where(c => c != '#'));
 
                 if (line.Contains('~'))
                     questionString = line.Where(c => c != '~').ToList();

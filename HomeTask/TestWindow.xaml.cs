@@ -36,11 +36,13 @@ namespace HomeTask
         private void LoadNextQuestion()
         {
             _currentQuestion++;
-            _testLoader.ParseNewQuestion(_currentQuestion, question, radioButton1, radioButton2, radioButton3, image, out _correctAnswer, out bool endOfFile);
+            _testLoader.ParseNewQuestion(_currentQuestion, question, radioButton1, radioButton2, radioButton3, image, mediaElement, out _correctAnswer, out bool endOfFile);
             openImage.Visibility = image.Visibility;
+            replayButton.Visibility = mediaElement.Visibility;
+
             if (endOfFile)
             {
-                var messageBox = MessageBox.Show(MainWindow.surname + ", please show this result to teacher \n You answered " + _numberOfCorrectAnswers + " out of " + (_currentQuestion - 1) + " answers correctly!", "Hooray!");
+                var messageBox = MessageBox.Show(MainWindow.surname + ", please show this result to teacher \nYou answered " + _numberOfCorrectAnswers + " out of " + (_currentQuestion - 1) + " answers correctly!", "Hooray!");
                 if (messageBox == MessageBoxResult.OK)
                 {
                     var mainWindow = new MainWindow();
@@ -77,6 +79,12 @@ namespace HomeTask
         {
             var imageWindow = new Window1(image.Source);
             imageWindow.Show();
+        }
+
+        private void replayButton_Click(object sender, RoutedEventArgs e)
+        {
+            mediaElement.Stop();
+            mediaElement.Play();
         }
     }
 }

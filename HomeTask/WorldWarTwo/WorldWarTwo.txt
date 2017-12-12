@@ -23,7 +23,7 @@
 [RIGHT:1]
 [END]
 [START:4]
-@plane.jpg@
+#WW2_Japanese_Invasion_of_China_1937.mp4#
 ~What German bomber is depicted on the photo?~
 "Messerschmitt Bf 109"
 "Focke-Wulf Fw 190"

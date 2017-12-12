@@ -37,7 +37,6 @@ namespace HomeTask
         {
             _currentQuestion++;
             _testLoader.ParseNewQuestion(_currentQuestion, question, radioButton1, radioButton2, radioButton3, image, mediaElement, out _correctAnswer, out bool endOfFile);
-            openImage.Visibility = image.Visibility;
             replayButton.Visibility = mediaElement.Visibility;
 
             if (endOfFile)

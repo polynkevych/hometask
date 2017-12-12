@@ -6,17 +6,28 @@
         xmlns:local="clr-namespace:HomeTask"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen" WindowState="Maximized"
-        Title="TestWriter" Height="500" Width="500">
-    <Grid Background="#FFD1F7D8">
-        <RadioButton x:Name="radioButton1" Content="1" HorizontalAlignment="Left" Margin="75,325,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="radioButton2" Content="2" HorizontalAlignment="Left" Margin="75,345,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="radioButton3" Content="3" HorizontalAlignment="Left" Margin="75,365,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="nextQuestion" Content="Next Question" HorizontalAlignment="Left" Margin="149,399,0,0" VerticalAlignment="Top" Width="179" Click="nextQuestion_Click" Height="38"/>
-        <Image x:Name="image" Height="206" Margin="36,10,44,253" Width="412"/>
-        <TextBlock x:Name="question" HorizontalAlignment="Left" Margin="36,253,0,0" TextWrapping="Wrap" Text="QusetionText" VerticalAlignment="Top" Height="55" Width="412"/>
-        <Button x:Name="openImage" Content="Open image in new window" HorizontalAlignment="Left" Margin="315,221,0,0" VerticalAlignment="Top" Width="158" Click="openImage_Click"/>
-        <MediaElement x:Name="mediaElement" HorizontalAlignment="Left" Height="206" Margin="63,10,0,0" VerticalAlignment="Top" Width="373"/>
-        <Button x:Name="replayButton" Content="Replay" HorizontalAlignment="Left" Margin="75,221,0,0" VerticalAlignment="Top" Width="75" Click="replayButton_Click"/>
+        Title="TestWriter" Height="768" Width="1366">
+    <Window.Background>
+        <ImageBrush ImageSource="D:\НАУ\HomeTask\HomeTask\back.png"/>
+    </Window.Background>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush  Stretch="UniformToFill" TileMode="Tile"/>
+        </Grid.Background>
+
+        <Canvas Margin="666,389,-32,242">
+            <TextBlock x:Name="question" TextWrapping="Wrap" HorizontalAlignment="Center"  VerticalAlignment="Center" Text="QuestionText" Margin="0,-180,0,0" Width="493" Height="103" FontSize="22" FontStyle="Italic" FontFamily="Roboto"/>
+            <RadioButton x:Name="radioButton1" Content="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="25" Width="519" FontSize="18" FontFamily="Roboto" FontWeight="Bold"/>
+            <RadioButton x:Name="radioButton2" Content="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20" Width="364" Canvas.Top="34" FontSize="18" FontFamily="Roboto" FontWeight="Bold"/>
+            <RadioButton x:Name="radioButton3" Content="3" HorizontalAlignment="Center" VerticalAlignment="Center" Canvas.Top="66" Width="474" Height="21" FontSize="18" FontFamily="Roboto" FontWeight="Bold"/>
+
+        </Canvas>
+
+        <Button x:Name="nextQuestion" Content="Next Question" HorizontalAlignment="Left" Margin="800,522,0,0" VerticalAlignment="Top" Width="179" Click="nextQuestion_Click" Height="38" Background="#FFEEEEEE"/>
+        <Image x:Name="image" Margin="43,100,783,145"/>
+
+        <MediaElement x:Name="mediaElement" HorizontalAlignment="Left" Height="294" Margin="43,156,0,0" VerticalAlignment="Top" Width="532"/>
+        <Button x:Name="replayButton" Content="Replay" HorizontalAlignment="Left" Margin="43,507,0,0" VerticalAlignment="Top" Width="86" Click="replayButton_Click" Height="23"/>
 
     </Grid>
 </Window>

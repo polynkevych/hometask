@@ -6,11 +6,23 @@
         xmlns:local="clr-namespace:HomeTask"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen" WindowState="Maximized"       
-        Title="TestWriter" Height="350" Width="400" Icon="D:\НАУ\HomeTask\HomeTask\Menu.ico" ResizeMode="CanMinimize">
+        Title="TestWriter" Height="768" Width="1366" Icon="D:\НАУ\HomeTask\HomeTask\Menu.ico" ResizeMode="CanMinimize">
+    <Window.Background>
+        <ImageBrush Stretch="UniformToFill" ImageSource="D:\НАУ\HomeTask\HomeTask\Tipbg.png"/>
+    </Window.Background>
     <Grid>
-        <Button x:Name="selectTestFile" Content="Start" HorizontalAlignment="Center" Margin="550,404,548,285" VerticalAlignment="Center" Width="196" Click="selectTestFile_Click" Height="50" Background="#FF65CB00" FontSize="22" IsEnabled="False" Grid.ColumnSpan="2"/>
-        <Button x:Name="exitButton" Content="Exit" HorizontalAlignment="Center" Height="31" Margin="0,0,0,24" VerticalAlignment="Bottom" Width="101" Click="exitButton_Click" Background="White" Grid.ColumnSpan="2"/>
-        <Rectangle Fill="#CCF4F4F5" HorizontalAlignment="Center" Height="153" Stroke="White" VerticalAlignment="Top" Width="394" Margin="0,161,0,0" Grid.ColumnSpan="2"/>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="55" Width="238" Background="#00000000" Margin="548,180,508,0"><Run FontWeight="Bold" Text="     Welcome to TestWriter!"/><LineBreak/><Run Text="After pressing the &quot;Start&quot; button you will be &#x9;redirected to test chooser"/></TextBlock>       <TextBox x:Name="textBox" HorizontalAlignment="Center" Height="23" Margin="0,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197" TextChanged="textBox_TextChanged" Grid.ColumnSpan="2"/>
+        <Button x:Name="exitButton" Content="Exit" Height="31" Width="101" Click="exitButton_Click" Background="White" Margin="630,684,629,24"/>
+        <Rectangle Fill="#CCF4F4F5" Stroke="White" Width="394" Margin="483,134,483,329"/>
+        <TextBlock x:Name="textBlock1" TextWrapping="Wrap" Background="#00000000" TextAlignment="Center" Margin="540,155,525,474" FontSize="16" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.383"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform><Run FontWeight="Bold" Text="Welcome to TestWriter!"/><LineBreak/><Run FontWeight="Bold"/><LineBreak/><Run Text="After pressing the &quot;Start&quot; button you will be"/><Run Text=" "/><Run Text="redirected to test chooser"/><Run Text="."/><LineBreak/><Run Text="To continue, write your surname. please:"/></TextBlock>
+        <TextBox x:Name="textBox" Height="23" Margin="582,277,581,439" TextWrapping="Wrap" Width="197" TextChanged="textBox_TextChanged"/>
+        <Button x:Name="selectTestFile" Content="Start" HorizontalAlignment="Center" Margin="582,325,582,364" VerticalAlignment="Center" Width="196" Click="selectTestFile_Click" Height="50" Background="#FF65CB00" FontSize="22" IsEnabled="False"/>
     </Grid>
 </Window>

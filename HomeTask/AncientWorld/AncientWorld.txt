@@ -1,0 +1,73 @@
+[START:1]
+~When was Roman Republic found?~
+"509 BC"
+"153 BC"
+"14 AD"
+[RIGHT:1]
+[END]
+[START:2]
+~When did Roman Republic turn into Roman Empire?~
+"27 BC"
+"35 AD"
+"104 BC"
+[RIGHT:1]
+[END]
+[START:3]
+@man.jpg@
+~Whose statue is that?~
+"Mark Antony"
+"Octavian Augustus"
+"Gaius Julius Caesar"
+[RIGHT:2]
+[END]
+[START:4]
+~Who of this philosopher lived earlier?~
+"Marcus Aurelius"
+"Lucius Annaeus Seneca"
+"Marcus Tullius Cicero"
+[RIGHT:3]
+[END]
+[START:5]
+~A Pyrrhic victory is a victory that inflicts such a devastating toll on the victor that it is tantamount to defeat. What state Pyrrhus was king of?~
+"Athena"
+"Epirus"
+"Sparta"
+[RIGHT:2]
+[END]
+[START:6]
+~What sea is called "Mare internum" in latin?~
+"Mediterranean Sea"
+"Black Sea"
+"Red Sea"
+[RIGHT:1]
+[END]
+[START:7]
+@death.jpg@
+~Death of which philosopher is depicted here?~
+"Plato"
+"Diogenes"
+"Lucius Annaeus Seneca"
+[RIGHT:3]
+[END]
+[START:8]
+~What "Alea iacta est" means?~
+"The die is cast"
+"I came, I saw, I conquered"
+"Remember that you have to die"
+[RIGHT:1]
+[END]
+[START:9]
+@event.jpg@
+~What event is depicted on this painting?~
+"Spartacus slave uprising"
+"Assasination of Caesar"
+"Roman jew revolt"
+[RIGHT:2]
+[END]
+[START:10]
+~"Nature produced him in order to show what unlimited vice would be capable of when combined with unlimited power", of whom is this quote?~
+"Octavian Augustus "
+"Nero"
+"Caligula"
+[RIGHT:3]
+[END]

@@ -1,0 +1,81 @@
+[START:1]
+~When did World War II started?~
+@1.jpg@
+"1 September 1939"
+"22 June 1941"
+"14 June 1940"
+[RIGHT:1]
+[END]
+[START:2]
+~What country or territory was first annexed by Third Reich?~
+@2.jpg@
+"Sudetenland, 1-10 October 1938"
+"Austria, 12 March 1938"
+"Dansig, 7 September 1939"
+[RIGHT:2]
+[END]
+[START:3]
+~"If Hitler invaded Hell, I would make at least a favourable reference to the devil in the House of Commons.", whose quote is it?~
+@3.jpg@
+"Winston Churchill"
+"Joseph Stalin"
+"Franklin D. Roosevelt"
+[RIGHT:1]
+[END]
+[START:4]
+@plane.jpg@
+~What German bomber is depicted on the photo?~
+"Messerschmitt Bf 109"
+"Focke-Wulf Fw 190"
+"Junkers Ju 87"
+[RIGHT:3]
+[END]
+[START:5]
+~What battle operation is commonly known as D-Day?~
+@4.jpg@
+"Normandy landings (codenamed Operation Neptune)"
+"Battle of Stalingrad"
+"Battle of Peleliu (codenamed Operation Stalemate II)"
+[RIGHT:1]
+[END]
+[START:6]
+~Who was the Prime Minister of the United Kingdom when the war started?~
+@5.jpg@
+"Winston Churchill"
+"Neville Chamberlain"
+"George VI"
+[RIGHT:2]
+[END]
+[START:7]
+@man.jpg@
+~Who is the man on the photo?~
+"Zog I, King of Albania"
+"Haile Selassie I, Emperor of Ethiopia"
+"Rodolfo Graziani, Marshal of Italy"
+[RIGHT:1]
+[END]
+[START:8]
+~Which of this events happened first?~
+@7.jpg@
+"German occupation of Kiev"
+"Japanese attack on Pearl Harbor"
+"Annexation of Ethiopia by Italy"
+[RIGHT:3]
+[END]
+[START:9]
+@flag.jpg@
+~What is depicted on this photo?~
+@8.jpg@
+"Raising the Flag on Iwo Jima"
+"Raising the Flag over the Reichstag "
+"American soldiers crossing the Rhine river"
+[RIGHT:1]
+[END]
+[START:10]
+~What was the strategic meaning of Dansig to Germany?~
+@9.jpg@
+"It produced fuel, that was needed for future war with Soivet Union"
+"It offered land passage to Konigsberg"
+"It had numerous factories, wich would greatly boost German production"
+[RIGHT:2]
+[END]

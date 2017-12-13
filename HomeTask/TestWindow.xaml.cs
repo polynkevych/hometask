@@ -71,6 +71,8 @@ namespace HomeTask
             radioButton2.IsChecked = false;
             radioButton3.IsChecked = false;
 
+            nextQuestion.IsEnabled = false;
+
             LoadNextQuestion();
         }
 
@@ -84,6 +86,21 @@ namespace HomeTask
         {
             mediaElement.Stop();
             mediaElement.Play();
+        }
+
+        private void radioButton1_Checked(object sender, RoutedEventArgs e)
+        {
+            nextQuestion.IsEnabled = true;
+        }
+
+        private void radioButton2_Checked(object sender, RoutedEventArgs e)
+        {
+            nextQuestion.IsEnabled = true;
+        }
+
+        private void radioButton3_Checked(object sender, RoutedEventArgs e)
+        {
+            nextQuestion.IsEnabled = true;
         }
     }
 }

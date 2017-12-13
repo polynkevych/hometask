@@ -24,10 +24,10 @@
 [END]
 [START:4]
 #WW2_Japanese_Invasion_of_China_1937.mp4#
-~What German bomber is depicted on the photo?~
-"Messerschmitt Bf 109"
-"Focke-Wulf Fw 190"
-"Junkers Ju 87"
+~When event described in video happened?~
+"1941"
+"end of 1939"
+"1937"
 [RIGHT:3]
 [END]
 [START:5]
@@ -55,17 +55,16 @@
 [RIGHT:1]
 [END]
 [START:8]
-~Which of this events happened first?~
-@7.jpg@
+#WW2_Balkan_Inferno (41-45).mp4#
+~What event described in the video?~
 "German occupation of Kiev"
-"Japanese attack on Pearl Harbor"
+"Balkan Inferno"
 "Annexation of Ethiopia by Italy"
-[RIGHT:3]
+[RIGHT:2]
 [END]
 [START:9]
-@flag.jpg@
 ~What is depicted on this photo?~
-@8.jpg@
+@flag.jpg@
 "Raising the Flag on Iwo Jima"
 "Raising the Flag over the Reichstag "
 "American soldiers crossing the Rhine river"

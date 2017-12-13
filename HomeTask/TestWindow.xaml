@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:HomeTask"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen" WindowState="Maximized"
-        Title="TestWriter" Height="768" Width="1366">
+        Title="TestWriter" Height="768" Width="1366" ResizeMode="CanMinimize">
+    <Window.Icon>
+        <BitmapImage UriSource="file:///D:/НАУ/HomeTask/HomeTask/Menu.ico"/>
+    </Window.Icon>
     <Window.Background>
         <ImageBrush ImageSource="D:\НАУ\HomeTask\HomeTask\back.png"/>
     </Window.Background>
@@ -17,13 +20,13 @@
 
         <Canvas Margin="666,389,-32,242">
             <TextBlock x:Name="question" TextWrapping="Wrap" HorizontalAlignment="Center"  VerticalAlignment="Center" Text="QuestionText" Margin="0,-180,0,0" Width="493" Height="103" FontSize="22" FontStyle="Italic" FontFamily="Roboto"/>
-            <RadioButton x:Name="radioButton1" Content="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="25" Width="519" FontSize="18" FontFamily="Roboto" FontWeight="Bold"/>
-            <RadioButton x:Name="radioButton2" Content="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20" Width="364" Canvas.Top="34" FontSize="18" FontFamily="Roboto" FontWeight="Bold"/>
-            <RadioButton x:Name="radioButton3" Content="3" HorizontalAlignment="Center" VerticalAlignment="Center" Canvas.Top="66" Width="474" Height="21" FontSize="18" FontFamily="Roboto" FontWeight="Bold"/>
+            <RadioButton x:Name="radioButton1" Content="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="25" Width="519" FontSize="18" FontFamily="Roboto" FontWeight="Bold" Checked="radioButton1_Checked"/>
+            <RadioButton x:Name="radioButton2" Content="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="20" Width="364" Canvas.Top="34" FontSize="18" FontFamily="Roboto" FontWeight="Bold" Checked="radioButton2_Checked"/>
+            <RadioButton x:Name="radioButton3" Content="3" HorizontalAlignment="Center" VerticalAlignment="Center" Canvas.Top="66" Width="474" Height="21" FontSize="18" FontFamily="Roboto" FontWeight="Bold" Checked="radioButton3_Checked"/>
 
         </Canvas>
 
-        <Button x:Name="nextQuestion" Content="Next Question" HorizontalAlignment="Left" Margin="800,522,0,0" VerticalAlignment="Top" Width="179" Click="nextQuestion_Click" Height="38" Background="#FFEEEEEE"/>
+        <Button x:Name="nextQuestion" Content="Next Question" HorizontalAlignment="Left" Margin="800,522,0,0" VerticalAlignment="Top" Width="179" Click="nextQuestion_Click" Height="38" Background="#FFEEEEEE" IsEnabled="False"/>
         <Image x:Name="image" Margin="43,100,783,145"/>
 
         <MediaElement x:Name="mediaElement" HorizontalAlignment="Left" Height="294" Margin="43,156,0,0" VerticalAlignment="Top" Width="532"/>
